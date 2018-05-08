@@ -1,5 +1,5 @@
 # Shapp
-###Simple Chat App
+### Simple Chat App
   Prosta aplikacja czatowa, umozliwiająca wysyłanie wiadomości oraz plików.
   
   
@@ -9,7 +9,7 @@ Dodane pokoje są automatycznie usuwane minutę po wylogowaniu ostatniego użytk
 Użytkownik wylogowuję się z pokoju zmieniając go na inny, wychodząc ze strony, lub resetując nick.
 Pliki można wysyłać klikając na ikonę w prawym dolnych rogu czatu, bądź metodą drag'n'drop.
 
-##Użyte technologie
+## Użyte technologie
 
 - ### [Angular](https://angular.io/)
   - ##### [qrcode-generator-ts](https://www.npmjs.com/package/qrcode-generator-ts)
