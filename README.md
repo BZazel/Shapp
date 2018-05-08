@@ -18,7 +18,8 @@ Pliki można wysyłać klikając na ikonę w prawym dolnych rogu czatu, bądź m
   - #### [Socket.io](https://socket.io/)
   
 ## Do zrobienia
-- [ ] Dopasowanie strony do urządzeń mobilnych
-- [ ] Grupowanie wysyłanych zdjęć w oknie czatu
-- [ ] Możliwość zmniejszenie rozmiaru zdjęć na serwerze
-- [ ] Poprawienie paska progresu wysyłania plików (uwględnienie wielu plików)
+- [ ] Dopasowanie strony do urządzeń mobilnych.
+- [ ] Grupowanie wysyłanych zdjęć w oknie czatu.
+- [ ] Możliwość zmniejszenie rozmiaru zdjęć na serwerze.
+- [ ] Dodanie możliwości generowania kodu QR dla wybranych plików.
+- [ ] Poprawienie paska progresu wysyłania plików (uwględnienie wielu plików).
