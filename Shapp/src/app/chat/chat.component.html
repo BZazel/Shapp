@@ -1,0 +1,26 @@
+<div id="Wrapper" >
+    <div id="ChatWrapper" [@WrapperAnimation]="chatS.chatHidden" >
+        <div id="Messages" ></div>
+        <div id="Upload">
+            <div id="ProgressBarHolder">
+                    <div id="ProgressBar"></div>
+            </div>
+            <button  class="fas fa-times"></button>
+        </div>
+        
+        <div id="TextInputWrapper">
+        <input #Msg id="TextInput" type="text" placeholder="Napisz wiadomość" 
+        (keyup.enter)="SendMessage(Msg.value); Msg.value = '' ">
+        
+            <div id="FileInputWrapper" >
+                
+                 <label id="FileLabel" for="GetFile"  class="fas fa-download" [@WrapperAnimation]="chatS.chatHidden"></label>
+                <input id="GetFile" type="file" multiple>
+            </div>
+        </div>
+    </div>
+
+    <div id="List">
+        <app-list></app-list>
+    </div>    
+</div>

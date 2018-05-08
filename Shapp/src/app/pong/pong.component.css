@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+#Wrapper
+{
+    margin: 0px;
+    padding: 0px;
+    width:100vw;
+    height:100vh;
+    display: flex;
+}
+#GameWrapper
+{
+    margin:0px;
+    padding:0px;
+    overflow: hidden;
+    width: 500px;
+    height: 400px;
+
+    /* width: 80% ;
+    height:100%; */
+}
+#RoomsListWrapper
+{
+    margin: 2px;
+    width:20%;
+    height:300px;
+    float: left;
+}

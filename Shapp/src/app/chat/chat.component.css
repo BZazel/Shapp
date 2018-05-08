@@ -1,0 +1,215 @@
+*{box-sizing: border-box;}
+@font-face{
+    font-family: 'Lato';
+    src:url('https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+
+}
+
+
+@media screen and (orientation:portrait){
+
+    #Wrapper
+    {
+        width:  100vw;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: hidden;
+        
+    }
+    #ChatWrapper
+    {
+        width:80%;
+        height:100%;
+
+    }
+
+    #List
+    {
+        width: 20%;
+        height: 100%;
+        margin: auto;
+
+    }
+        
+}
+/* END portrait ===========================*/
+/* video{
+    width:300px;
+    margin:5px;
+    }
+    img{
+        min-width: 100px;
+        max-width:300px;
+    } */
+audio{
+    margin:5px;
+}
+#Smart_nav{
+visibility:collapse;
+}
+.DragOver{
+    border:8px dashed rgb(236, 240, 241); 
+    
+}
+.DragOver:after{
+    content: "<i class="far fa-plus-square" id="DragIco"></i>";
+    color:white;
+}
+#DragIco{
+    width:80px;
+    height:80px;
+    align-self: center;
+}
+/* p::after { 
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+} */
+#Wrapper
+{
+    width:100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    overflow: hidden;
+    
+}
+#ChatWrapper
+{
+    width:80%;
+    height:100%;
+
+}
+#List
+{
+   width: 20%;
+    height: 100%;
+    margin: auto;
+
+}
+#Messages{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height:95%;
+    background-color: #2C3E50;
+
+}
+.FileName{
+    color:#ECF0F1;
+    margin-left: 15px;
+}
+.Message{
+    margin:5px;
+    padding:4px;
+    display: block;
+    max-width: 60%;
+    border-radius: 3px;
+    align-self: flex-start;
+    background:rgba(41,128,185,0.3);
+}   
+.Nick{
+    font-style: italic;
+    font-size:0.9em;
+    margin:1px;
+    padding: 0px;
+    color:  rgba(236, 240, 241, 0.8);
+    
+}
+.MessageText{
+    Margin: 3px 5px;
+    font-size:1.2em;
+    color: #ECF0F1;
+}
+.ClientMessage
+{
+    align-self: flex-end;
+    background: rgba(236,510,241,0.1);
+    
+}
+.Admin
+{   background: none;
+    border:none;
+    font-size:0.8em;
+    color:rgba(93, 93, 104, 0.708);
+    align-self: center;
+    font-style: italic;
+}
+#Upload{
+    width: 100%;
+    display: none;
+}
+
+#ProgressBarHolder{
+    width:95%;
+    float:left; 
+}
+#Upload button{
+    background: none;
+    border:none;
+    float:left;
+    color: #E74C3C;
+    width:5%;
+    padding: 1px;
+}
+#ProgressBar{
+    height:5px;
+    background:#E74C3C
+}
+
+#TextInputWrapper
+{
+    height:5%;
+    border-top: 1px solid rgba(93, 93, 104, 0.8);
+    display: flex;
+}
+
+#TextInput
+{
+    border:none;
+    display: block;
+    width: 95%;
+    height: 100%;
+    margin-left: 10px;
+}
+#TextInput:focus
+{
+   outline: none;
+}
+#FileInputWrapper
+{
+    display:flex;
+    width:5%;
+    text-align: center;
+}
+#FileInputWrapper:hover
+{
+    color: white;
+    background: #E74C3C;    
+}
+#GetFile{
+
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+}
+#FileLabel{
+    width:100% !important;
+    font-weight: 700;
+    background: #ECF0F1;
+    font-size: 2em;
+    text-align: center;
+}
+
+#FileLabel{
+    background: transparent;
+    display: inline-block;
+    cursor: pointer;
+}

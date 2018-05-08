@@ -1,0 +1,24 @@
+<div id="ListContentWrapper"  >
+    <div *ngIf="!chatService.nickName" style="height: 60px;">
+            <span>Witaj w Shapp ( <strong>S</strong>imple C<strong>h</strong>at A<strong>pp</strong>)</span>
+        </div> 
+    <input id="GetNick" [@IsEmpty]="GetNick.value" #GetNick type="text" placeholder="Podaj Nick" (keyup.enter)="SetNick(GetNick.value)"  
+    [@NickNameSet]="NickNameSet" autofocus >
+
+    <button class="fas fa-redo" id="ReName" *ngIf="chatService.nickName" (click)="Reset()">Zresetuj nick</button>
+    <div id="Wrapper">
+        <div id="ListWrapper"  *ngIf="chatService.nickName">
+        <li class="ListItem" [@AnimItems]="" [@RoomListAnim]='Room.active' *ngFor="let Room of Rooms" (click)="Join(Room);" >
+            <span id="RoomName">
+                    {{ Room.name.substr(6) }}  
+            </span>
+            <span id="RoomCount">{{ Room.count}}</span>
+        </li>
+        </div>
+        <div id="AddRoom" class="fas fa-plus" *ngIf="chatService.nickName" >
+           
+            <input id="RoomCreation" #nameInput type="text" (keyup.enter)="CreateRoom(nameInput.value); nameInput.value='' " placeholder="Otwórz własny pokój">
+        </div>        
+
+    </div>
+</div>

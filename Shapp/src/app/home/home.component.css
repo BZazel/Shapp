@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+#Navigation
+{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    height: 25px;
+    margin:0px;
+}
+.NavItem
+{
+    margin:2px;
+    display:block;
+    width:100px;
+    border:solid black 2px;
+    
+}
+#MainWrapper
+{
+    width:100vw;
+    height: 100vh;
+    margin:0px;
+    padding:0px;
+    background: lightgray;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.Item
+{
+    margin:5px;
+    width:20%;
+    height: 20vw;
+    border: solid black 2px;
+    text-align:center;
+    
+}
+.Pong
+{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f8/Pong.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+}
