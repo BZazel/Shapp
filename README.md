@@ -1,4 +1,4 @@
-# Shapp
+# [Shapp](https://evening-spire-47274.herokuapp.com/)
 ### Simple Chat App
   Prosta aplikacja czatowa, umozliwiająca wysyłanie wiadomości oraz plików.
   
