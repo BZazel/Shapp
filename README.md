@@ -16,6 +16,12 @@ Pliki można wysyłać klikając na ikonę w prawym dolnych rogu czatu, bądź m
 - ### [Node.js](https://nodejs.org/en/)
   - #### [Express.js](https://expressjs.com/)
   - #### [Socket.io](https://socket.io/)
+## Uruchomienie lokalne
+  Przy pomocy [Node.js](https://nodejs.org/en/) należy uruchomić plik **server.js**
+  
+```
+> node server.js
+```
   
 ## Do zrobienia
 - [ ] Dopasowanie strony do urządzeń mobilnych.
