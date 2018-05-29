@@ -282,7 +282,7 @@ app.route('/Files(*)')
 })
 
 // PORT SETUP
-app.set('port', process.env.PORT || 3000)
+const PORT = process.env.PORT || 3000
 //process.env.PORT = 3000;
 
-server.listen(process.env.PORT, ()=>{ console.log(`WORKS ON: ${process.env.PORT}`)});
+server.listen(PORT, ()=>{ console.log(`WORKS ON: ${PORT}`)});
